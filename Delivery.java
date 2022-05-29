@@ -14,6 +14,14 @@ public class Delivery
     private String non_striker;
     private String bowler;
     private String is_super_over;
+    private String wide_runs;
+    private String bye_runs;
+    private String leg_bye_run;
+    private String no_ball_runs;
+    private String penalty_runs;
+    private String bats_man_run;
+    private String extra_runs;
+    private String total_runs;
 
     public int getMatch_id()
     {
@@ -189,12 +197,5 @@ public class Delivery
         this.total_runs = total_runs;
     }
 
-    private String wide_runs;
-    private String bye_runs;
-    private String leg_bye_run;
-    private String no_ball_runs;
-    private String penalty_runs;
-    private String bats_man_run;
-    private String extra_runs;
-    private String total_runs;
+   
 }
