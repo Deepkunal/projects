@@ -8,6 +8,12 @@ public class Match
     private String team2;
     private String toss_winner;
     private String toss_decision;
+    private String result;
+    private String winner;
+    private String winner_by_runs;
+    private String win_by_wickets;
+    private String player_of_match;
+
 
     public int getId()
     {
@@ -128,12 +134,15 @@ public class Match
     {
         this.player_of_match = player_of_match;
     }
+     public String getPlayer_of_match()
+    {
+        return player_of_match;
+    }
 
-    private String result;
-    private String winner;
-    private String winner_by_runs;
-    private String win_by_wickets;
-    private String player_of_match;
+       
+   
+
+
 
 }
 
