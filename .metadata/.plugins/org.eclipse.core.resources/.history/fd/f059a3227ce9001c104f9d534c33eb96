@@ -1,0 +1,68 @@
+package com.contactUs;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class RequestDao
+{
+	private boolean isUser = false;
+	Connection con=null;
+	public boolean isUser() {
+		return isUser;
+	}
+    RequestDao() throws SQLException, ClassNotFoundException
+    {
+    	Class.forName("org.postgresql.Driver");
+
+        System.out.println("Driver loaded");
+        con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Contactus","root","Deep@12345");
+  
+    	
+    }
+   public void insert(String fullname, String email,String Message)
+   {
+	   String result="Data entered success";
+	   String insert="INSERT INTO contact VALUES (?,?,?);";
+	  try
+	  {
+		  
+		   PreparedStatement ps=con.prepareStatement(insert);
+				  {
+			         ps.setString(1,fullname);
+			         ps.setString(2,email);
+			         ps.setString(3,Message);
+			         ps.executeUpdate();
+			         
+//			         result=preparedStatement.executeupdate();
+			         
+			  
+				  }
+          
+          
+          Statement stmt=con.createStatement();
+//          rs=stmt.executeQuery("SELECT * FROM login where email=" + email +" & password="+ password+";");
+
+//          if(rs!=null)
+//        	  isUser=true;
+
+	  }
+	      catch(Exception e)
+	  {
+		 System.out.println(e); 
+	  }
+	
+    }
+	    public String contact(String fullname,String email,String message) throws SQLException
+	    {
+	    
+		Statement stmt=con.createStatement();
+	    String query="insert into contact values(?,?,?)";
+
+	    
+	    return query;
+}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Login/src/main/webapp/admin.jsp&apos; to &apos;login.jsp&apos;" description="Rename resource &apos;admin.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/admin.jsp" name="login.jsp" stamp="1654839920475" updateReferences="true"/>
+</session>

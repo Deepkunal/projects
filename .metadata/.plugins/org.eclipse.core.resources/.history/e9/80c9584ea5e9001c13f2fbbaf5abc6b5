@@ -1,0 +1,30 @@
+package com.contactUs;
+
+
+import java.sql.Connection;
+
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class UserDao 
+{
+	private boolean isUser = false;
+	
+	public String userLogin(String username,String password)
+	{
+		String sql= select * from username=
+	}
+
+	public boolean isUser() {
+		return isUser;
+	}
+
+	public void setUser(boolean isUser) {
+		this.isUser = isUser;
+	}
+	
+
+}
